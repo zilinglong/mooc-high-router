@@ -32,6 +32,7 @@
   }
 }
 
+
 /*自定义样式*/
 
 body {
@@ -49,18 +50,28 @@ li {
 }
 
 ul li {
-  display: inline-block;;
+  display: inline-block;
   padding: 20px;
   list-style: none;
   font-weight: bold;
   color: #fff;
   text-decoration: none;
 }
+
 ul {
   background: #111;
   padding: 0;
 }
+
 .content {
   background: #fff;
   color: #f00;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.active {
+  background: #09f;
 }
