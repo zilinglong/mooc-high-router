@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './App.css';
-// import Frame from './components/Frame';
 import Libai from './components/Libai';
 import Dufu from './components/Dufu';
 import Lishangyin from './components/Lishangyin';
@@ -22,6 +21,7 @@ function App() {
             <Link to="/lishangyin">李商隐</Link>
           </li>
         </ul>
+        <Route path="/" exact component={Libai} />
         <Route path="/libai" component={Libai} />
         <Route path="/dufu" component={Dufu} />
         <Route path="/lishangyin" component={Lishangyin} />
