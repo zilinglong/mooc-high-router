@@ -5,6 +5,7 @@ import './App.css';
 import Libai from './components/Libai';
 import Dufu from './components/Dufu';
 import Lishangyin from './components/Lishangyin';
+// import TodoList from './components/TodoList';
 function App() {
   return (
     <Router>
@@ -20,10 +21,10 @@ function App() {
           <li>
             <Link to="/lishangyin">李商隐</Link>
           </li>
-          <Route path="/libai" component={Libai} />
-          <Route path="/dufu" component={Dufu} />
-          <Route path="/lishangyin" component={Lishangyin} />
         </ul>
+        <Route path="/libai" component={Libai} />
+        <Route path="/dufu" component={Dufu} />
+        <Route path="/lishangyin" component={Lishangyin} />
       </div>
     </Router>
   );
