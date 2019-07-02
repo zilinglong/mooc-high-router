@@ -18,6 +18,7 @@ class TodoList extends Component {
       list: [...this.state.list, this.state.inputValue],
       inputValue: ''
     });
+    this.refs.input.focus();
   }
   render() {
     const { list, inputValue } = this.state;
@@ -26,6 +27,7 @@ class TodoList extends Component {
         TodoList:
         <div>
           <input
+            ref="input"
             type="text"
             value={inputValue}
             onChange={e => this.inputChange(e)}
